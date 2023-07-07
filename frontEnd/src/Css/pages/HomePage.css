@@ -15,7 +15,7 @@
 }
 
 .homeHeading::after {
-  content: "Welcome to Campus & Student Finder";
+  content: "Welcome to Campus & Student Manager";
   position: absolute;
   top: 50%;
   left: 50%;
