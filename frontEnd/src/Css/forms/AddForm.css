@@ -6,13 +6,35 @@ button {
   background-color: transparent;
   box-shadow: none;
 }
+.container form {
+  border: 3px solid;
+  width: 600px;
+  height: 750px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #d2d2dbc5;
+  border-radius: 40px;
+}
+
+.container form .form-row {
+  display: flex;
+  margin: 32px 0;
+  align-items: center;
+}
 
 /* TOP HALF OF FORM: */
 
 .form-title {
-  font-size: 75px;
+  font-size: 65px;
   margin-bottom: -20px;
   text-align: center;
+  font-weight: lighter;
 }
 
 /* FORM CSS: */
@@ -21,6 +43,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("http://clipart-library.com/images_k/paint-splatter-png-transparent/paint-splatter-png-transparent-7.png");
+  background-size: cover;
 }
 
 .input {
