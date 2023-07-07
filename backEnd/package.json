@@ -1,0 +1,22 @@
+{
+  "name": "crudprojectbackend",
+  "version": "1.0.0",
+  "description": "## <p align=\"center\">[Design Paper](https://tinyurl.com/2bzexf57)</p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "g": "^2.0.1",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1"
+  }
+}
