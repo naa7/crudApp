@@ -44,7 +44,7 @@ function Students(props) {
         {!allStudents || allStudents.length === 0 ? (
           <div className="empty-students">
             <div>Empty</div>
-            <div>No campuses</div>
+            <div>No Students</div>
           </div>
         ) : (
           <div className="students-all-container">
