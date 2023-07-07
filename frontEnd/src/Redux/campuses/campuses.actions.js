@@ -13,7 +13,9 @@ export const fetchAllCampusesThunk = () => {
   return async (dispatch) => {
     try {
       console.log("fetchAllCampusesThunk is firing");
-      const response = await axios.get("http://localhost:8080/api/campuses");
+      const response = await axios.get(
+        "https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/campuses"
+      );
       console.log("fetchAllCampusesThunk completed");
       dispatch(fetchAllCampuses(response.data));
     } catch (error) {
@@ -35,7 +37,7 @@ export const fetchSingleCampusThunk = (campusId) => {
     try {
       console.log("fetchSingleCampusThunk is firing");
       const response = await axios.get(
-        `http://localhost:8080/api/campuses/${campusId}`
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/campuses/${campusId}`
       );
       console.log("fetchSingleCampusThunk completed");
       dispatch(fetchSingleCampus(response.data));
@@ -58,7 +60,7 @@ export const addCampusThunk = (campusData) => {
     try {
       console.log("addCampusThunk is firing");
       const response = await axios.post(
-        "http://localhost:8080/api/campuses",
+        "https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/campuses",
         campusData
       );
       console.log("addCampusThunk completed");
@@ -83,7 +85,7 @@ export const deleteACampusThunk = (campusId) => {
     try {
       console.log("deleteACampusThunk is firing");
       const response = await axios.delete(
-        `http://localhost:8080/api/campuses/${campusId}`
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/campuses/${campusId}`
       );
       console.log("deleteACampusThunk completed");
       dispatch(deleteACampus(response.data));
@@ -110,7 +112,7 @@ export const editCampusThunk = (campusId, updates) => {
     try {
       console.log("editCampusThunk is firing");
       const response = await axios.put(
-        `http://localhost:8080/api/campuses/${campusId}`,
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/campuses/${campusId}`,
         updates
       );
       console.log("editCampusThunk completed");

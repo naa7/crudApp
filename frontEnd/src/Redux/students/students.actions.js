@@ -13,7 +13,9 @@ export const fetchAllStudentsThunk = () => {
   return async (dispatch) => {
     try {
       console.log("fetchAllStudentsThunk is firing");
-      const response = await axios.get("http://localhost:8080/api/students");
+      const response = await axios.get(
+        "https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/students"
+      );
       console.log("fetchAllStudentsThunk completed");
       dispatch(fetchAllStudents(response.data));
     } catch (error) {
@@ -35,7 +37,7 @@ export const fetchSingleStudentThunk = (studentId) => {
     try {
       console.log("fetchSingleStudentThunk is firing");
       const response = await axios.get(
-        `http://localhost:8080/api/students/${studentId}`
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/students/${studentId}`
       );
       console.log("fetchSingleStudentThunk completed");
       dispatch(fetchSingleStudent(response.data));
@@ -59,7 +61,7 @@ export const addStudentThunk = (studentData) => {
       console.log("addStudentThunk is firing");
       console.log("studentDATA", studentData);
       const response = await axios.post(
-        "http://localhost:8080/api/students",
+        "https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/students",
         studentData
       );
       console.log("addStudentThunk completed");
@@ -84,7 +86,7 @@ export const deleteAStudentThunk = (studentId) => {
     try {
       console.log("deleteAStudentThunk is firing");
       const response = await axios.delete(
-        `http://localhost:8080/api/students/${studentId}`
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/students/${studentId}`
       );
       console.log("deleteAStudentThunk completed");
       dispatch(deleteAStudent(response.data));
@@ -115,7 +117,7 @@ export const editStudentThunk = (studentId, updates) => {
       console.log("studentId", studentId);
 
       const response = await axios.put(
-        `http://localhost:8080/api/students/${studentId}`,
+        `https://crud-app-back-gzgw2crm3-naa7.vercel.app/api/students/${studentId}`,
         updates
       );
       console.log("editStudentThunk completed");
