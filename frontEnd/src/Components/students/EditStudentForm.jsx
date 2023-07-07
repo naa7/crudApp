@@ -23,7 +23,7 @@ function EditStudentForm(props) {
     imageUrl: "",
     email: "",
     gpa: "",
-    campusId: "",
+    campusId: student.campus.id,
   });
 
   const [submitted, setSubmitted] = useState(false);
