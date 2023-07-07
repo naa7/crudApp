@@ -111,6 +111,9 @@
   color: #fffdfc;
   box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
   background: #04d804;
+  font-size: 30px;
+  text-align: center;
+}
 }
 
 .empty-campuses {
