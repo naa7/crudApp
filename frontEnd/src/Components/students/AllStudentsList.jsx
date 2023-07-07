@@ -26,7 +26,6 @@ function Students() {
   };
 
   const handleEdit = (studentId) => {
-    console.log("I am here", studentId);
     navigate(`/students/${studentId}/edit`);
   };
 
