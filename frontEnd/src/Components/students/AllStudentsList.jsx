@@ -1,12 +1,13 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import { deleteAStudentThunk } from "../../Redux/students/students.actions";
 import "../../Css/students/AllStudentsList.css";
 import "../../Css/forms/EditAddForms.css";
 
-function Students(props) {
-  const { allStudents, allCampuses } = props;
+function Students() {
+  const allStudents = useSelector((state) => state.students.allStudents);
+  const allCampuses = useSelector((state) => state.campuses.allCampuses);
   const dispatch = useDispatch();
   const campusesArray = Object.values(allCampuses);
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ function Students(props) {
   };
 
   const handleEdit = (studentId) => {
+    console.log("I am here", studentId);
     navigate(`/students/${studentId}/edit`);
   };
 

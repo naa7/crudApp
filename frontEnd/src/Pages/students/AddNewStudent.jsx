@@ -61,8 +61,8 @@ function AddNewStudent() {
   }
 
   return (
-    <div>
-      <h1 className="form-title">Add A New Student</h1>
+    <div className="container">
+      <h1 className="form-title">Add New Student</h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="input">
           <label htmlFor="firstName" className="input-label">

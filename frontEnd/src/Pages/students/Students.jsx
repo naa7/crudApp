@@ -22,7 +22,7 @@ function Students() {
   return (
     <div>
       <div className="studentsHeading">
-        <StudentsList allStudents={allStudents} allCampuses={allCampuses} />
+        <StudentsList />
       </div>
     </div>
   );

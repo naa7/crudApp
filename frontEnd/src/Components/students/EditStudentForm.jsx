@@ -15,15 +15,13 @@ function EditStudentForm(props) {
   const navigate = useNavigate();
   const student = useSelector((state) => state.students.singleStudent);
   const allCampuses = useSelector((state) => state.campuses.allCampuses);
-
-  console.log("allCampuses", allCampuses);
   const [studentData, setStudentData] = useState({
     firstName: "",
     lastName: "",
     imageUrl: "",
     email: "",
     gpa: "",
-    campusId: student.campus.id,
+    campusId: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -41,7 +39,7 @@ function EditStudentForm(props) {
         imageUrl: student.imageUrl,
         email: student.email,
         gpa: student.gpa,
-        campusId: studentData.campusId,
+        campusId: student.campus.id,
       });
     }
   }, [student]);
