@@ -1,0 +1,131 @@
+input,
+button {
+  font: inherit;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* TOP HALF OF FORM: */
+
+.form-title {
+  font-size: 75px;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+/* FORM CSS: */
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  & + .input {
+    margin-top: 1.5rem;
+  }
+}
+
+.input-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  align-items: center;
+}
+
+.input-field {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0.25rem;
+  border: 0.0625rem solid #999;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  min-height: 3rem;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+.input-field:focus {
+  background-color: #e0e0e0;
+}
+
+.input-selectlabel {
+  font-weight: 600;
+  margin-top: -20px;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.input-select {
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+  margin-top: 0.25rem;
+  border: 0.0625rem solid #999;
+  padding: 0.5rem 0.75rem;
+  min-height: 2rem;
+  font-size: 20px;
+  display: block;
+}
+
+.button-submit {
+  margin: 10px;
+  background: #00bd68;
+  border: 1px solid #00bd68;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "nunito", "roboto", "proxima-nova", "proxima nova", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 3rem;
+  outline: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+#campusError,
+#descriptionError,
+#addressError,
+#firstError,
+#lastError,
+#emailError,
+#gpaError {
+  display: none;
+  font-family: "nunito", "roboto", "proxima-nova", "proxima nova", sans-serif;
+  color: red;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+#name:invalid:not(:placeholder-shown) ~ #campusError {
+  display: block;
+}
+#description:invalid:not(:placeholder-shown) ~ #descriptionError {
+  display: block;
+}
+#address:invalid:not(:placeholder-shown) ~ #addressError {
+  display: block;
+}
+#firstName:invalid:not(:placeholder-shown) ~ #firstError {
+  display: block;
+}
+#lastName:invalid:not(:placeholder-shown) ~ #lastError {
+  display: block;
+}
+#email:invalid:not(:placeholder-shown) ~ #emailError {
+  display: block;
+}
+#gpa:invalid:not(:placeholder-shown) ~ #gpaError {
+  display: block;
+}

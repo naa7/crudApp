@@ -1,0 +1,14 @@
+.campusesHeading {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/548/127/original/vector-abstract-collage-background-hand-drawn-colorful-beautiful-art-painting-colored-with-hand-drawing-element-for-fabric-print-wrapping-paper-printable-art-wallpaper-banner-and-poster-background.jpg");
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: scroll;
+}

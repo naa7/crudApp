@@ -1,0 +1,282 @@
+.single-campus-heading {
+  background-image: url("https://wallpapertag.com/wallpaper/full/7/1/0/869253-gorgerous-pretty-floral-backgrounds-1080x1920.jpg");
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: scroll;
+}
+
+.single-campus-all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.single-campus-single-container {
+  border: 3px solid;
+  width: 800px;
+  height: 350px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #232324c5;
+  border-radius: 40px;
+}
+
+.single-campus-header {
+  color: rgb(255, 252, 252);
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  background-color: rgba(44, 42, 42, 0.7);
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  border-radius: 20px;
+}
+
+.single-campus-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+  overflow: auto;
+  margin-left: 50px;
+}
+
+.single-campus-campus-image {
+  width: 350px;
+  height: 270px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+  border: 5px solid rgb(97, 97, 97);
+  text-align: center;
+  border-radius: 40px;
+}
+
+.single-campus-campus-name {
+  color: #eeff00;
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+.single-campus-campus-address,
+.single-campus-campus-description,
+.single-campus-student-count {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.single-campus-students-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.single-campus-student-container {
+  display: flex;
+  border: 3px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  width: 250px;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color: #232324c5;
+  border-radius: 70px;
+}
+
+.single-campus-students-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: auto;
+  margin-left: 50px;
+}
+
+.single-campus-students-header {
+  color: rgb(255, 252, 252);
+  width: 90%;
+  max-width: 190px;
+  height: auto;
+  background-color: rgba(44, 42, 42, 0.7);
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 15px;
+}
+
+.single-campus-student-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border: 3px solid rgb(97, 97, 97);
+  border-radius: 70px;
+}
+
+.single-campus-student-name {
+  font-size: 30px;
+  transition: background-color 0.3s;
+}
+
+.single-campus-student-link-hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.single-campus-student-link-hover:hover {
+  color: #00ff0d;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+}
+
+.single-campus-add-button {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  background: #00bd68;
+  border: 1px solid #00bd68;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "nunito", roboto, "proxima-nova", "proxima nova", "sans-serif";
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 75px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  border-radius: 20px;
+}
+
+.single-campus-edit-button,
+.single-campus-delete-button {
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 800;
+  padding: 0.75rem 0.875rem;
+  line-height: 1rem;
+  min-height: 2.5rem;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.single-campus-edit-button {
+  background: #00a2ff;
+  border: 1px solid #00a2ff;
+  margin-right: 60px;
+}
+.single-campus-delete-button {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  margin-right: 20px;
+}
+
+.single-campus-student-edit-button,
+.single-campus-student-delete-button {
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 800;
+  padding: 0.75rem 0.875rem;
+  line-height: 1rem;
+  min-height: 2.5rem;
+  border-radius: 6px;
+  font-size: 15px;
+  text-align: center;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  border-radius: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.single-campus-student-edit-button {
+  background: #00a2ff;
+  border: 1px solid #00a2ff;
+  margin-right: 10px;
+}
+.single-campus-student-delete-button {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  margin-left: 10px;
+}
+
+.single-campus-edit-button:hover {
+  background: #0066ff;
+  border: 1px solid #0c0c0c;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+}
+
+.single-campus-delete-button:hover {
+  background: #ff0000;
+  border: 1px solid #0c0c0c;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+}
+
+.single-campus-add-button:hover {
+  border: 1px solid #0c0c0c98;
+  color: #ffffff;
+  font-weight: 900;
+  color: #fffdfc;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+  background: #04d804;
+}
+
+.single-campus-student-edit-button:hover {
+  background: #0066ff;
+  border: 1px solid #0c0c0c;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+}
+
+.single-campus-student-delete-button:hover {
+  background: #ff0000;
+  border: 1px solid #0c0c0c;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 8px;
+}

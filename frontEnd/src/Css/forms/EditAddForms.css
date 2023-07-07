@@ -1,0 +1,9 @@
+.edit-form-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  max-height: 100%;
+  text-align: center;
+}

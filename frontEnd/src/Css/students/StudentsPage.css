@@ -1,0 +1,14 @@
+.studentsHeading {
+  background-image: url("https://wallpapercave.com/wp/wp6860624.jpg");
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: scroll;
+}

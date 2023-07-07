@@ -1,0 +1,46 @@
+.addCampus {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.campNameInput {
+  width: 400px;
+  height: 30px;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.campImgInput {
+  width: 400px;
+  height: 30px;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.campDescInput {
+  width: 400px;
+  height: 100px;
+  font-size: 25px;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.campAddyInput {
+  width: 400px;
+  height: 30px;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.campSubmit {
+  background-color: rgb(94, 197, 223);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 25px;
+}
