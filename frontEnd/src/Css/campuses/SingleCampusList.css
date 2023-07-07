@@ -15,17 +15,15 @@
 
 .single-campus-all-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  background-size: cover;
-  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .single-campus-single-container {
   border: 3px solid;
   width: 800px;
-  height: 350px;
+  height: 400px;
   max-width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -62,10 +60,10 @@
 
 .single-campus-campus-image {
   width: 350px;
-  height: 270px;
+  height: 350px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   float: left;
   border: 5px solid rgb(97, 97, 97);
   text-align: center;
@@ -77,7 +75,7 @@
   font-size: 40px;
   margin-top: 50px;
   text-align: center;
-  white-space: nowrap;
+  white-space: wrap;
   margin-top: 30px;
   font-weight: 900;
 }
@@ -87,8 +85,9 @@
 .single-campus-student-count {
   color: #ffffff;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   margin: 20px;
+  margin-left: 420px;
 }
 .single-campus-students-container {
   display: flex;
@@ -194,7 +193,7 @@
   text-align: center;
   width: 150px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 15px;
   transition: box-shadow 0.3s;
 }
